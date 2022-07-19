@@ -13,6 +13,14 @@ body{
     background-color: #161616;
     border-radius: 30px;
     padding: 50px;
+    margin-bottom: 50px;
+}
+.header a{
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 10px 30px;
+    color: white;
+    background-color: red;
 }
 .header-text{
 color: aliceblue;
@@ -27,3 +35,25 @@ color: aliceblue;
 }
 /* header end */
 
+/* side nav */
+nav{
+    height: 312px;
+    width: 312px;
+    background-color: #161616;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 30px;
+}
+button{
+    height: 64px;
+    width: 252px;
+    background-color: aliceblue;
+    border-radius: 20px;
+}
+.red-button{
+    color: white;
+    background-color: red;
+}
