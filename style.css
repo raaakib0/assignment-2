@@ -1,0 +1,29 @@
+
+body{
+    /* goole fonts style */
+    font-family: 'Poppins', sans-serif;
+}
+
+/* header  */
+.header{
+    display: flex;
+    align-items: center;
+    width: 1321px;
+    height: 646px;
+    background-color: #161616;
+    border-radius: 30px;
+    padding: 50px;
+}
+.header-text{
+color: aliceblue;
+}
+
+.header-image img{
+    width: 581px;
+    height: 613px;
+
+  display: flex;
+    align-items: flex-end;
+}
+/* header end */
+
