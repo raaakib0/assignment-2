@@ -8,14 +8,21 @@ body{
 .full-header{
     display: flex;
     justify-content: center;
+    opacity: 1;
 }
+.full-header:hover{
+    background-color: aliceblue;
+    opacity: 0.9;
+        transition: 0.1s;
+    }
+
 .header{
     display: flex;
     align-items: center;
     justify-content: space-around;
     max-width: 80%;
     margin: 0 auto;
-    height: 30%;
+    height: 40%;
     background-color: #161616;
     border-radius: 30px;
     padding: 50px;
@@ -38,14 +45,13 @@ width: 40%;
 }
 .header-text h1{
     font-size: 4vw;
+    margin: 20px;
 }
 .header-text p{
     margin-bottom: 10px;
+    font-size: 1vw;
 }
-.header-image{
-    display: flex;
-        align-items: flex-end;
-}
+
 .header-image img{
   width: 100%;
 }
@@ -76,12 +82,16 @@ nav{
     align-items: center;
     border-radius: 30px;
 }
-button{
-    height: 64px;
+.button{
+    height: 30px;
     width: 200px;
     background-color: aliceblue;
     border-radius: 20px;
     font-size: large;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 20px;
+    margin: 5px;
 }
 .red-button{
     color: white;
@@ -90,8 +100,6 @@ button{
 
 /* blog */
 .blog{
-    max-width: 984px;
-    max-height: 1134px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -105,6 +113,30 @@ button{
 }
 .single-blog img{
     width: 100%;
+}
+/* upcomming match page */
+
+.single-match {
+    width: 312px;
+    padding-bottom: 30px;
+    border: 2px solid silver;
+    border-radius: 10px;
+}
+
+.match{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 30px 20px;
+}
+.match-text-part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* end */
+button{
+    border-radius: 10px;
 }
 .blog-text-part{
     padding: 20px;
@@ -164,8 +196,11 @@ button{
    
    
 }
-    
+.contact{
+    display: flex;
+} 
 .contact a{
+
         text-decoration: none;
         color: white;
         padding: 30px;
@@ -196,62 +231,94 @@ button{
 
 @media only screen and (min-width:689px) and (max-width: 992px) {
 
-    .header{
-        width: 100%;
-    }
-   
-      
-        .middle-part {
-            display: flex;
-            flex-direction: row;
-            align-items: center
-        }
-    
-        .middle-part main {
-            display: flex;
-            flex-direction: column;
-            gap: 30px;
-        }
-     nav {
-        height: 10%;
-        max-width: 50%;
-        gap: 10px;
-         display: flex;
-         flex-direction: row;
-         background-color: white;
-     }
-  .blog {
-      width: 100%;
-        height: 60%;
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 20px;
-      justify-items: center;
-  }
+.header{
+    width: 100%;
+}   
+ .middle-part {
+     display: flex;
+     flex-direction: row;
+     align-items: center
+ }
+ .middle-part main {
+     display: flex;
+     flex-direction: column;
+     gap: 30px;
+ }
+
+ nav {
+    height: 7%;
+    max-width: 80%;
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+ }
+ nav a{
+    text-align: center;
+    justify-items: center;
+ }
+ .blog {
+     width: 100%;
+     height: 60%;
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     gap: 20px;
+     justify-items: center;
+ }
 }
 
-/* Smart Phone */
+/*----------
+ Smart Phone
+ ----------- */
+
 @media only screen and (max-width:688px) {
+
     .hidden-button {
             display: none;
         }
   .header{
     display: flex;
         width: 100%;
+        margin: 0,auto;
         flex-direction: column;
     }
-    .middle-part main {
-        margin: 0 ,auto;
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-    }
-          .blog {
-              width: 100%;
-              height: 60%;
-              display: grid;
-              grid-template-columns: repeat(1, 1fr);
-              gap: 20px;
-              justify-items: center;
-          }
+        .header-text {
+            height: 40%;
+            width: 60%;
+            margin-bottom: 10%;
+        }
+.header-text h1 {
+    font-size: 4vw;
+    margin: 10px;
+}
+.header-image img {
+    width: 100%;
+}
+.middle-part main {
+    margin: 0, auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+nav {
+    background-color: white;
+}
+
+.blog {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+}
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.social-icon {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
 }
