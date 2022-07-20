@@ -23,6 +23,7 @@ body{
     margin-top: 50px;
     margin-bottom: 50px;
 }
+/* header button */
 .header a{
     text-decoration: none;
     border-radius: 10px;
@@ -73,6 +74,7 @@ button{
     width: 200px;
     background-color: aliceblue;
     border-radius: 20px;
+    font-size: large;
 }
 .red-button{
     color: white;
@@ -105,6 +107,22 @@ button{
     justify-content: space-evenly;
 }
 
+/* hidden Button */
+.hidden-button{
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+
+}
+.hidden-button a {
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 10px 30px;
+    color: white;
+    background-color: red;
+    font-size: large;
+}
+
 /* footer */
 
 .footer{
@@ -135,7 +153,6 @@ button{
    
    
 }
-
     
 .contact a{
         text-decoration: none;
@@ -150,4 +167,26 @@ button{
     text-decoration: none;
     color: white;
     padding: 30px;
+}
+
+
+/* Resposnive media query */
+
+/* Desktop */
+@media only screen and (min-width: 1024px) {
+    .hidden-button {
+            display: none;
+        }
+}
+
+/* Tablet */
+@media only screen and (min-width:768px) and (max-width: 1023px) {
+    
+}
+
+/* Smart Phone */
+@media only screen and (max-width:767px) {
+    .hidden-button {
+            display: none;
+        }
 }
