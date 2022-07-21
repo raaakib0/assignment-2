@@ -41,6 +41,7 @@ body{
     color: white;
     background-color: gray;
     margin: 0 auto;
+    font-size: 10px;
 }
 .header-text{
 color: aliceblue;
@@ -48,12 +49,11 @@ width: 40%;
 }
 .header-text h1{
     font-size: 4vw;
-    margin: 20px;
     color: black;
 }
 .header-text p{
     margin-bottom: 10px;
-    font-size: 1vw;
+    font-size: 10px;
     color: black;
 }
 
@@ -223,7 +223,9 @@ button{
 
 /* Resposnive media query */
 
-/* Desktop */
+/*------------
+ Desktop
+ ------------- */
 @media only screen and (min-width: 993px) {
     .hidden-button {
             display: none;
@@ -252,8 +254,8 @@ button{
 
  nav {
     height: 7%;
-    max-width: 80%;
-    gap: 10px;
+    max-width: 100%;
+    gap: 1vw;
     display: flex;
     flex-direction: row;
     background-color: white;
@@ -278,23 +280,23 @@ button{
 
 @media only screen and (max-width:688px) {
 
-    .hidden-button {
-            display: none;
-        }
-  .header{
-    display: flex;
-        width: 100%;
-        margin: 0,auto;
-        flex-direction: column;
-    }
-        .header-text {
-            height: 40%;
-            width: 60%;
-            margin-bottom: 10%;
-        }
+.hidden-button {
+        display: none;
+}
+.header{
+  display: flex;
+      width: 100%;
+      margin: 0,auto;
+      flex-direction: column;
+}
+.header-text {
+    height: 40%;
+    width: 60%;
+    margin-bottom: 10%;
+    text-align: center;
+}
 .header-text h1 {
-    font-size: 4vw;
-    margin: 10px;
+    font-size: 5vw;
 }
 .header-image img {
     width: 100%;
