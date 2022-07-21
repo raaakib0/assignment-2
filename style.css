@@ -282,6 +282,9 @@ button{
     flex-direction: row;
     background-color: white;
  }
+ nav:hover {
+     background-color: white;
+ }
  nav a{
     text-align: center;
     justify-items: center;
@@ -331,6 +334,9 @@ button{
 }
 
 nav {
+    background-color: white;
+}
+nav:hover {
     background-color: white;
 }
 
